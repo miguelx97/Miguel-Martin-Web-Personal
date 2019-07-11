@@ -1,0 +1,83 @@
+/* 
+Gris:
+#646464
+
+Azul:
+#224f88
+*/
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* #navbar{
+    position: fixed;
+    min-width: auto;
+    z-index: 1;
+    width: 100%;
+} */
+
+.nav-item{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.nav-item a{
+    color: #dddddd !important
+}
+
+.nav-item a:hover{
+    color: #ffffff !important;
+    text-decoration: overline;
+
+}
+
+#foto_perfil{
+    border: 2px solid #ffffff;
+    width: 200px;
+    border-radius: 50%;
+    margin: 1.5rem 0rem 2rem;
+}
+#logo{
+    width: 60px;
+}
+
+#fondo-cabecera{
+    height: 500px;
+    width: 100%;
+}
+
+#titulo{
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+#titulo h1{
+    font-size: 3rem;
+}
+#titulo h2{
+    font-size: 2.5rem;
+}
+
+
+#cabecera{
+    /* background-image: linear-gradient(to right, #1e4c96 , #0e2d5e); */
+    background-image: url("img/fondo-cabecera.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
