@@ -1,20 +1,4 @@
-/* 
-Gris:
-#646464
-
-Azul:
-#224f88
-*/
-body{
-    font-family: 'Open Sans', sans-serif;
-}
-
-/* #navbar{
-    position: fixed;
-    min-width: auto;
-    z-index: 1;
-    width: 100%;
-} */
+/* CSS de los elementos como cabecera, navbar, footer, etc */
 
 .nav-item{
     padding-right: 1.5rem;
@@ -28,7 +12,6 @@ body{
 .nav-item a:hover{
     color: #ffffff !important;
     text-decoration: overline;
-
 }
 
 #foto_perfil{
@@ -46,7 +29,7 @@ body{
     width: 100%;
 }
 
-#titulo{
+#titulo-web{
     color: #ffffff;
     position: absolute;
     top: 50%;
@@ -56,26 +39,33 @@ body{
     text-align: center;
     font-family: 'Libre Baskerville', serif;
 }
-#titulo h1{
+#titulo-web h1{
     font-size: 3rem;
 }
-#titulo h2{
+#titulo-web h2{
     font-size: 2.5rem;
 }
 
-
 #cabecera{
     /* background-image: linear-gradient(to right, #1e4c96 , #0e2d5e); */
-    background-image: url("img/fondo-cabecera.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
+    /* background-image: url("../img/fondo-cabecera.jpg"); */
+    /* background-size: 100%;
+    background-repeat: no-repeat; */
     width: 100%;
+    /* height: 640px; */
     position: relative;
 }
 
+#navbar{
+    transition: all 0.5s ease;
+}
 
+@media screen and (max-width: 1024){
+    #cabecera{
+        background-image: linear-gradient(to right, #1e4c96 , #0e2d5e); 
+    }
 
-
+}
 
 
 

@@ -1,0 +1,49 @@
+/* 
+Gris:
+#646464
+
+Azul:
+#224f88
+*/
+.titulo{
+    padding-top: 4rem;
+    color: #224f88;
+    /* padding-left: 1rem; */
+    border-bottom: 1px solid #646464;
+}
+
+.descripcion{
+    font-size: 1.2rem;
+}
+
+.subtitulo{
+    text-align: center;
+    font-size: 1.7rem !important;
+    color:  #646464;
+    margin-top: 3rem;
+}
+
+.contenido{
+    margin: 1rem 1rem;
+}
+
+.recuadro{
+    margin: 2rem 2rem;
+}
+.recuadro .col-md-6{
+    margin-top:1rem;
+    vertical-align: middle;
+
+    display: flex;
+    align-items: center;
+}
+.icono{
+    max-height: 3rem;
+}
+.recuadro h4{
+    text-align: center;
+}
+.lenguaje{
+    width: inherit;
+    text-align: right;
+}
