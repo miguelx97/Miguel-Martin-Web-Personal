@@ -5,6 +5,13 @@ Gris:
 Azul:
 #224f88
 */
+
+
+:root {
+    --main-color: #224f88; 
+    --sec-color: #646464;
+  }
+
 body{
     font-family: 'Open Sans', sans-serif;
     /* background: #f1f1f1 !important; */

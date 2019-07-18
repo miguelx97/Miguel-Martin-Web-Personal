@@ -5,11 +5,13 @@ Gris:
 Azul:
 #224f88
 */
+
+
 .titulo{
     padding-top: 4rem;
-    color: #224f88;
+    color: var(--main-color);
     /* padding-left: 1rem; */
-    border-bottom: 1px solid #646464;
+    border-bottom: 1px solid var(--sec-color);
 }
 
 .descripcion{
@@ -18,32 +20,50 @@ Azul:
 
 .subtitulo{
     text-align: center;
-    font-size: 1.7rem !important;
-    color:  #646464;
-    margin-top: 3rem;
+    font-size: 1.8rem;
+    color:  var(--sec-color);
+    margin: 1rem;
 }
 
 .contenido{
     margin: 1rem 1rem;
 }
 
-.recuadro{
-    margin: 2rem 2rem;
+.recuadro-conocimiento{
+    margin-bottom: 2rem;
 }
-.recuadro .col-md-6{
-    margin-top:1rem;
+.recuadro-conocimiento .col-6{
+    margin-top: 1rem;
     vertical-align: middle;
 
     display: flex;
     align-items: center;
 }
+
+.recuadro-conocimiento .col-lg{
+    margin-top: 1rem;
+    vertical-align: middle;
+
+    display: flex;
+    align-items: center;
+}
+
 .icono{
     max-height: 3rem;
 }
-.recuadro h4{
+.recuadro-conocimiento h4{
     text-align: center;
 }
 .lenguaje{
     width: inherit;
     text-align: right;
+}
+
+.titulo-lenguaje{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    font-style: oblique;
+    border-bottom: 1px solid gainsboro;
+    margin: 0px 20%;
+    padding-bottom: 4px;
 }
