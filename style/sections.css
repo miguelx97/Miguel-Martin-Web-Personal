@@ -29,10 +29,10 @@ Azul:
     margin: 1rem 1rem;
 }
 
-.recuadro-conocimiento{
+.sec-conocimiento .row{
     margin-bottom: 2rem;
 }
-.recuadro-conocimiento .col-6{
+.sec-conocimiento .col-6{
     margin-top: 1rem;
     vertical-align: middle;
 
@@ -40,7 +40,7 @@ Azul:
     align-items: center;
 }
 
-.recuadro-conocimiento .col-lg{
+.sec-conocimiento .col-lg{
     margin-top: 1rem;
     vertical-align: middle;
 
@@ -51,19 +51,34 @@ Azul:
 .icono{
     max-height: 3rem;
 }
-.recuadro-conocimiento h4{
-    text-align: center;
-}
+
 .lenguaje{
     width: inherit;
     text-align: right;
 }
 
-.titulo-lenguaje{
+.sec-conocimiento h4{
+    text-align: center;
     font-size: 1.5rem;
     color: var(--main-color);
     font-style: oblique;
     border-bottom: 1px solid gainsboro;
     margin: 0px 20%;
     padding-bottom: 4px;
+}
+
+.sec-principal .col-xl-4 {
+    margin-top: 3rem;
+    padding: 0rem 2rem;
+}
+
+.sec-principal img{
+    width: 100%;
+    margin: 1rem 0rem;
+}
+
+.sec-principal h4{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    font-style: oblique;
 }
