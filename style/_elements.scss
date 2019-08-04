@@ -1,0 +1,55 @@
+/* CSS de los elementos como cabecera, navbar, footer, etc */
+
+.nav-item {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    a {
+      color: #dddddd !important;
+      &:hover {
+        color: #ffffff !important;
+        text-decoration: overline;
+      }
+    }
+  }
+  
+  #foto_perfil {
+    border: 2px solid #ffffff;
+    width: 200px;
+    border-radius: 50%;
+    margin: 1.5rem 0rem 2rem;
+  }
+  
+  #logo {
+    width: 60px;
+  }
+  
+  #fondo-cabecera {
+    height: 500px;
+    width: 100%;
+  }
+  
+  #titulo-web {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  #cabecera {
+    width: 100%;
+    position: relative;
+  }
+  
+  #navbar {
+    transition: all 0.5s ease;
+  }

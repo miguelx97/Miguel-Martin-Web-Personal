@@ -1,0 +1,87 @@
+.titulo {
+    padding-top: 4rem;
+    color: $main-color;
+    border-bottom: 1px solid $sec-color
+  }
+  
+  .descripcion {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitulo {
+    text-align: center;
+    font-size: 1.8rem;
+    color: $sec-color;
+    margin: 1rem;
+  }
+  
+  .contenido {
+    margin: 1rem 1rem !important;
+  }
+  
+  #sec-conocimientos {
+    .row {
+      margin-bottom: 2rem;
+    }
+    .col-6 {
+      margin-top: 1rem;
+    }
+    h4 {
+      text-align: center;
+      font-size: 1.5rem;
+      color: $main-color;
+      font-style: oblique;
+      border-bottom: 1px solid gainsboro;
+      margin: 0px 20%;
+      padding-bottom: 4px;
+    }
+  }
+  
+  .icono {
+    max-height: 3rem;
+  }
+
+  #sec-principal {
+    .col-xl-4 {
+      margin-top: 3rem;
+      padding: 0rem 2rem;
+    }
+    img {
+      width: 100%;
+      margin: 1rem 0rem;
+    }
+    h4 {
+      font-size: 1.5rem;
+      color: $main-color;
+      font-style: oblique;
+    }
+    img {
+      width: 100%;
+      margin: 1rem 0rem;
+    }
+  }
+  
+  #sec-yo-me-encargo img {
+    width: 100%;
+    margin: 1rem 0rem;
+  }
+  
+  #sec-animo {
+    background-image: url("../img/animo/mesa-programador.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .row{
+      height: 24rem;
+      margin: 5rem 0px 0px 0px !important;
+      text-align: center;
+      color: white;
+      font-style: oblique;
+    }
+  }
+
+  #sec-recorrido .container{
+    @import "./sec-recorrido";
+  }
+

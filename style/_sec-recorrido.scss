@@ -1,0 +1,129 @@
+
+
+  /* Linea temporal */
+  
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #bfbfbf;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -3px;
+    }
+  }
+
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    margin: initial;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: #c4e2ff;
+      border: 4px solid #224f88;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+      box-sizing: initial;
+    }
+  }
+  
+  /* circulos */
+  
+  /* Contenido a la izquierda */
+  
+  .left {
+    left: 0;
+  }
+  
+  /* Contenido a la derecha */
+  
+  .right {
+    left: 50%;
+  }
+  
+  /* Flechas a la izquierda del recuadro */
+  
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #f7f7f7;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #f7f7f7;
+  }
+  
+  /* Flechas a la derecha del recuadro*/
+  
+  .right {
+    &::before {
+      content: " ";
+      height: 0;
+      position: absolute;
+      top: 22px;
+      width: 0;
+      z-index: 1;
+      left: 30px;
+      border: medium solid #f7f7f7;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent #f7f7f7 transparent transparent;
+    }
+    &::after {
+      left: -16px;
+    }
+  }
+
+  /* contenido */
+  
+  .content {
+    padding: 10px 30px;
+    background-color: #f7f7f7;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 600px) {
+
+    /* situa la linea a la izquierda */
+    .timeline::after {
+      left: 31px;
+    }
+    /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+      &::before {
+        left: 60px;
+        border: medium solid #f7f7f7;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #f7f7f7 transparent transparent;
+      }
+    }
+    
+    .left::after {
+      left: 15px;
+    }
+    .right {
+      &::after {
+        left: 15px;
+      }
+      left: 0%;
+    }
+  }

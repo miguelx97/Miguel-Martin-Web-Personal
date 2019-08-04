@@ -1,0 +1,46 @@
+/* 
+Gris:
+#646464
+
+Azul:
+#224f88
+*/
+
+$main-color: #224f88; 
+$sec-color: #646464;
+
+@import "./elements";
+@import "./sections";
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    /* background: #f1f1f1 !important; */
+}
+
+.col-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vertical-center{
+    div{
+        display: flex;
+        align-items: center;
+    }
+    span{
+        width: inherit;
+    }
+}
+
+.mt-20{
+    margin: 20rem;
+}
+
+
+
+
+
+
+
+
+

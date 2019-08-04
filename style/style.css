@@ -1,0 +1,305 @@
+/* 
+Gris:
+#646464
+
+Azul:
+#224f88
+*/
+/* CSS de los elementos como cabecera, navbar, footer, etc */
+.nav-item {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.nav-item a {
+  color: #dddddd !important;
+}
+
+.nav-item a:hover {
+  color: #ffffff !important;
+  text-decoration: overline;
+}
+
+#foto_perfil {
+  border: 2px solid #ffffff;
+  width: 200px;
+  border-radius: 50%;
+  margin: 1.5rem 0rem 2rem;
+}
+
+#logo {
+  width: 60px;
+}
+
+#fondo-cabecera {
+  height: 500px;
+  width: 100%;
+}
+
+#titulo-web {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#titulo-web h1 {
+  font-size: 3rem;
+}
+
+#titulo-web h2 {
+  font-size: 2.5rem;
+}
+
+#cabecera {
+  width: 100%;
+  position: relative;
+}
+
+#navbar {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.titulo {
+  padding-top: 4rem;
+  color: #224f88;
+  border-bottom: 1px solid #646464;
+}
+
+.descripcion {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #646464;
+  margin: 1rem;
+}
+
+.contenido {
+  margin: 1rem 1rem !important;
+}
+
+#sec-conocimientos .row {
+  margin-bottom: 2rem;
+}
+
+#sec-conocimientos .col-6 {
+  margin-top: 1rem;
+}
+
+#sec-conocimientos h4 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #224f88;
+  font-style: oblique;
+  border-bottom: 1px solid gainsboro;
+  margin: 0px 20%;
+  padding-bottom: 4px;
+}
+
+.icono {
+  max-height: 3rem;
+}
+
+#sec-principal .col-xl-4 {
+  margin-top: 3rem;
+  padding: 0rem 2rem;
+}
+
+#sec-principal img {
+  width: 100%;
+  margin: 1rem 0rem;
+}
+
+#sec-principal h4 {
+  font-size: 1.5rem;
+  color: #224f88;
+  font-style: oblique;
+}
+
+#sec-principal img {
+  width: 100%;
+  margin: 1rem 0rem;
+}
+
+#sec-yo-me-encargo img {
+  width: 100%;
+  margin: 1rem 0rem;
+}
+
+#sec-animo {
+  background-image: url("../img/animo/mesa-programador.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#sec-animo .row {
+  height: 24rem;
+  margin: 5rem 0px 0px 0px !important;
+  text-align: center;
+  color: white;
+  font-style: oblique;
+}
+
+#sec-recorrido .container {
+  /* Linea temporal */
+  /* circulos */
+  /* Contenido a la izquierda */
+  /* Contenido a la derecha */
+  /* Flechas a la izquierda del recuadro */
+  /* Flechas a la derecha del recuadro*/
+  /* contenido */
+  /* Responsive */
+}
+
+#sec-recorrido .container .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#sec-recorrido .container .timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #bfbfbf;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+#sec-recorrido .container .container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  margin: initial;
+}
+
+#sec-recorrido .container .container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #c4e2ff;
+  border: 4px solid #224f88;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  -webkit-box-sizing: initial;
+          box-sizing: initial;
+}
+
+#sec-recorrido .container .left {
+  left: 0;
+}
+
+#sec-recorrido .container .right {
+  left: 50%;
+}
+
+#sec-recorrido .container .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #f7f7f7;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #f7f7f7;
+}
+
+#sec-recorrido .container .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #f7f7f7;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #f7f7f7 transparent transparent;
+}
+
+#sec-recorrido .container .right::after {
+  left: -16px;
+}
+
+#sec-recorrido .container .content {
+  padding: 10px 30px;
+  background-color: #f7f7f7;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  #sec-recorrido .container {
+    /* situa la linea a la izquierda */
+    /* Full-width containers */
+  }
+  #sec-recorrido .container .timeline::after {
+    left: 31px;
+  }
+  #sec-recorrido .container .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  #sec-recorrido .container .container::before {
+    left: 60px;
+    border: medium solid #f7f7f7;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #f7f7f7 transparent transparent;
+  }
+  #sec-recorrido .container .left::after {
+    left: 15px;
+  }
+  #sec-recorrido .container .right {
+    left: 0%;
+  }
+  #sec-recorrido .container .right::after {
+    left: 15px;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  /* background: #f1f1f1 !important; */
+}
+
+.col-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vertical-center div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vertical-center span {
+  width: inherit;
+}
+
+.mt-20 {
+  margin: 20rem;
+}
+/*# sourceMappingURL=style.css.map */

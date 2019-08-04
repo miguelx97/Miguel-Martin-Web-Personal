@@ -2,11 +2,13 @@
 $(document).ready(function () {
     $('#navbar-container').load("elements/navbar.html");
     $('#cabecera-container').load("elements/cabecera.html");
-    $('#principal').load("sections/principal.html");
-    $('#yo-me-encargo').load("sections/yo-me-encargo.html");
-    $('#animo').load("sections/animo.html");
-    $('#recorrido').load("sections/recorrido.html");
-    $('#conocimientos').load("sections/conocimientos.html");
+    $('#sec-principal').load("sections/principal.html");
+    $('#sec-yo-me-encargo').load("sections/yo-me-encargo.html");
+    $('#sec-animo').load("sections/animo.html");
+    $('#sec-recorrido').load("sections/recorrido.html");
+    $('#sec-conocimientos').load("sections/conocimientos.html");
+    $('#sec-sobre-mi').load("sections/sobre-mi.html");
+    $('#footer-container').load("elements/footer.html");
     
 
     $(window).scroll(function(){
