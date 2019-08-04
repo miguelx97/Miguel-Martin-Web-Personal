@@ -32,30 +32,19 @@ Azul:
 .sec-conocimiento .row{
     margin-bottom: 2rem;
 }
+
 .sec-conocimiento .col-6{
     margin-top: 1rem;
-    vertical-align: middle;
-
-    display: flex;
-    align-items: center;
-}
-
-.sec-conocimiento .col-lg{
-    margin-top: 1rem;
-    vertical-align: middle;
-
-    display: flex;
-    align-items: center;
 }
 
 .icono{
     max-height: 3rem;
 }
 
-.lenguaje{
+/* .lenguaje{
     width: inherit;
     text-align: right;
-}
+}  */
 
 .sec-conocimiento h4{
     text-align: center;
@@ -82,3 +71,30 @@ Azul:
     color: var(--main-color);
     font-style: oblique;
 }
+
+.sec-principal img{
+    width: 100%;
+    margin: 1rem 0rem;
+}
+
+.sec-yo-me-encargo img{
+    width: 100%;
+    margin: 1rem 0rem;
+}
+
+.sec-animo{
+    margin: 5rem 0px 0px 0px !important;
+    height: 24rem;
+    text-align: center;
+    background-image: url("../img/animo/mesa-programador.jpg");
+    color: white;
+    font-style: oblique;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
