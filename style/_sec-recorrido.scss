@@ -1,5 +1,6 @@
 
 
+  $point-size: 25px;
   /* Linea temporal */
   
   .timeline {
@@ -27,11 +28,11 @@
     &::after {
       content: '';
       position: absolute;
-      width: 25px;
-      height: 25px;
-      right: -17px;
-      background-color: #c4e2ff;
-      border: 4px solid #224f88;
+      width: $point-size;
+      height: $point-size;
+      right: $point-size/-2;
+      background-color: $main-color;
+      // border: 4px solid $main-color;
       top: 15px;
       border-radius: 50%;
       z-index: 1;
@@ -59,7 +60,7 @@
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: $point-size*0.8;
     width: 0;
     z-index: 1;
     right: 30px;
@@ -75,7 +76,7 @@
       content: " ";
       height: 0;
       position: absolute;
-      top: 22px;
+      top: $point-size*0.8;
       width: 0;
       z-index: 1;
       left: 30px;
@@ -84,7 +85,7 @@
       border-color: transparent #f7f7f7 transparent transparent;
     }
     &::after {
-      left: -16px;
+      left: $point-size/-2;
     }
   }
 

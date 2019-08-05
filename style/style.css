@@ -12,12 +12,18 @@ Azul:
 }
 
 .nav-item a {
-  color: #dddddd !important;
+  color: #ffffff !important;
 }
 
 .nav-item a:hover {
   color: #ffffff !important;
   text-decoration: overline;
+}
+
+.bg-main-color {
+  background-color: #224f88;
+  -webkit-box-shadow: 0 1px 0 rgba(12, 13, 14, 0.2), 0 1px 6px rgba(59, 64, 69, 0.5);
+          box-shadow: 0 1px 0 rgba(12, 13, 14, 0.2), 0 1px 6px rgba(59, 64, 69, 0.5);
 }
 
 #foto_perfil {
@@ -225,9 +231,8 @@ footer #info-contacto div svg {
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
-  background-color: #c4e2ff;
-  border: 4px solid #224f88;
+  right: -12.5px;
+  background-color: #224f88;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -247,7 +252,7 @@ footer #info-contacto div svg {
   content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 20px;
   width: 0;
   z-index: 1;
   right: 30px;
@@ -260,7 +265,7 @@ footer #info-contacto div svg {
   content: " ";
   height: 0;
   position: absolute;
-  top: 22px;
+  top: 20px;
   width: 0;
   z-index: 1;
   left: 30px;
@@ -270,7 +275,7 @@ footer #info-contacto div svg {
 }
 
 #sec-recorrido .container .right::after {
-  left: -16px;
+  left: -12.5px;
 }
 
 #sec-recorrido .container .content {
