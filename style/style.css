@@ -65,6 +65,40 @@ Azul:
   transition: all 0.5s ease;
 }
 
+footer {
+  background-color: #224f88;
+  color: #ffffff;
+  margin-top: 4rem;
+  padding: 0.5rem 0;
+}
+
+footer #web-code {
+  margin: 0.7rem 0rem;
+}
+
+footer #web-code a {
+  color: #ffffff;
+  font-style: oblique;
+}
+
+footer #descargar-cv {
+  text-align: center;
+  margin-top: 0.7rem;
+}
+
+footer #descargar-cv img {
+  width: 4rem;
+  margin-top: 0.5rem;
+}
+
+footer #info-contacto div {
+  margin: 0.7rem 0rem;
+}
+
+footer #info-contacto div svg {
+  margin-right: 0.5rem;
+}
+
 .titulo {
   padding-top: 4rem;
   color: #224f88;
