@@ -1,7 +1,8 @@
 <nav id="navbar" class="fixed-top navbar navbar-expand-lg">
     <a class="navbar-brand ml-2 scroll" target="cabecera-container"><img id="logo" src="../img/logo-blanco.png"></a>
-    <button id="btnMenu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button id="btnMenu" class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -31,11 +32,10 @@
         goToByScroll($(this).attr("target"));
     });
     $("#btnMenu").click(function (e) {
-        if($(this).attr("aria-expanded") === 'false'){
-            $("#navbar").addClass("bg-main-color");
-        } else{
+        if ($(this).attr("aria-expanded") === 'true' && $(window).scrollTop() < 50) {
             $("#navbar").removeClass("bg-main-color");
+        } else {
+            $("#navbar").addClass("bg-main-color");
         }
-        
     });
 </script>

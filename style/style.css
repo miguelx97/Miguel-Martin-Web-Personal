@@ -352,4 +352,12 @@ body {
 .vertical-center span {
   width: inherit;
 }
+
+#btn-contacto {
+  position: fixed;
+  left: 30px;
+  bottom: 30px;
+  width: 50px;
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

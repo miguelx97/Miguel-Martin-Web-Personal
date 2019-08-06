@@ -18,9 +18,11 @@ $(document).ready(function () {
 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
-        $("#navbar").addClass("bg-main-color");
+        $("#navbar").addClass("bg-main-color");        
+        $("#btn-contacto").fadeIn();
     } else {
         $("#navbar").removeClass("bg-main-color");
+        $("#btn-contacto").fadeOut(); 
     }
 });
 
