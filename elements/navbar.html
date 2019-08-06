@@ -1,11 +1,14 @@
-<nav id="navbar" class="fixed-top navbar navbar-expand-lg"> <!-- bg-dark -->
+<nav id="navbar" class="fixed-top navbar navbar-expand-lg">
     <a class="navbar-brand ml-2 scroll" target="cabecera-container"><img id="logo" src="../img/logo-blanco.png"></a>
-
+    <button id="btnMenu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link scroll" target="sec-principal" href="#">Principal</a>
-            </li> 
+            </li>
             <li class="nav-item">
                 <a class="nav-link scroll" target="sec-recorrido" href="#">Experiencia y formación</a>
             </li>
@@ -16,14 +19,23 @@
                 <a class="nav-link scroll" target="sec-sobre-mi" href="#">Sobre mí</a>
             </li>
         </ul>
-            <a id="bb" class="btn btn-outline-light my-2 my-sm-0 mr-2" href="mailto:mmcmmc97@gmail.com">Contáctame </a>
+        <a id="bb" class="btn btn-outline-light my-2 my-sm-0 mr-2" target="_blank" rel="noopener noreferrer"
+            href="mailto:mmcmmc97@gmail.com">Contáctame </a>
     </div>
 </nav>
 
 
 <script type="text/javascript">
-     $(".scroll").click(function (e) {
+    $(".scroll").click(function (e) {
         e.preventDefault();
         goToByScroll($(this).attr("target"));
+    });
+    $("#btnMenu").click(function (e) {
+        if($(this).attr("aria-expanded") === 'false'){
+            $("#navbar").addClass("bg-main-color");
+        } else{
+            $("#navbar").removeClass("bg-main-color");
+        }
+        
     });
 </script>
