@@ -1,5 +1,5 @@
 .titulo {
-    padding-top: 4rem;
+    margin-top: 4rem;
     color: $main-color;
     border-bottom: 1px solid $sec-color
   }
@@ -43,8 +43,8 @@
   }
 
   #sec-principal {
+    margin-top: 4rem;
     .col-xl-4 {
-      margin-top: 3rem;
       padding: 0rem 2rem;
     }
     img {

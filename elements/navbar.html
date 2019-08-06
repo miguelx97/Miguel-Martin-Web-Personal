@@ -1,21 +1,29 @@
 <nav id="navbar" class="fixed-top navbar navbar-expand-lg"> <!-- bg-dark -->
-    <a class="navbar-brand ml-2"><img id="logo" src="../img/logo-blanco.png" /></a>
+    <a class="navbar-brand ml-2 scroll" target="cabecera-container"><img id="logo" src="../img/logo-blanco.png"></a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link scroll" target="sec-index">Principal</a>
+                <a class="nav-link scroll" target="sec-principal" href="#">Principal</a>
             </li> 
             <li class="nav-item">
-                <a class="nav-link scroll" target="sec-recorrido">Experiencia y formación</a>
+                <a class="nav-link scroll" target="sec-recorrido" href="#">Experiencia y formación</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link scroll" target="#sec-conocimientos">Conocimientos</a>
+                <a class="nav-link scroll" target="sec-conocimientos" href="#">Conocimientos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link scroll" target="sec-sobre-mi">Sobre mí</a>
+                <a class="nav-link scroll" target="sec-sobre-mi" href="#">Sobre mí</a>
             </li>
         </ul>
-            <button id="bb" class="btn btn-outline-info my-2 my-sm-0 mr-2">Enviar Correo</button>
+            <a id="bb" class="btn btn-outline-light my-2 my-sm-0 mr-2" href="mailto:mmcmmc97@gmail.com">Contáctame </a>
     </div>
 </nav>
+
+
+<script type="text/javascript">
+     $(".scroll").click(function (e) {
+        e.preventDefault();
+        goToByScroll($(this).attr("target"));
+    });
+</script>

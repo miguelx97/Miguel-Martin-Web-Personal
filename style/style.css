@@ -106,7 +106,7 @@ footer #info-contacto div svg {
 }
 
 .titulo {
-  padding-top: 4rem;
+  margin-top: 4rem;
   color: #224f88;
   border-bottom: 1px solid #646464;
 }
@@ -149,8 +149,11 @@ footer #info-contacto div svg {
   max-height: 3rem;
 }
 
+#sec-principal {
+  margin-top: 4rem;
+}
+
 #sec-principal .col-xl-4 {
-  margin-top: 3rem;
   padding: 0rem 2rem;
 }
 
@@ -336,9 +339,5 @@ body {
 
 .vertical-center span {
   width: inherit;
-}
-
-.mt-20 {
-  margin: 20rem;
 }
 /*# sourceMappingURL=style.css.map */

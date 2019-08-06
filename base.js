@@ -10,19 +10,25 @@ $(document).ready(function () {
     $('#sec-sobre-mi').load("sections/sobre-mi.html");
     $('#footer-container').load("elements/footer.html");
 
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 50) {
-            $("#navbar").addClass("bg-main-color");
-        } else {
-            $("#navbar").removeClass("bg-main-color");
-        }
-    });
-    $("sec").click(function() {
-        alert("x");
-        $('body').animate({
-            scrollTop: eval($('#' + $(this).attr('target')).offset().top - 70)
-        }, 1000);
+    $(".scroll").click(function (e) {
+        e.preventDefault();
+        goToByScroll($(this).attr("target"));
     });
 });
 
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+        $("#navbar").addClass("bg-main-color");
+    } else {
+        $("#navbar").removeClass("bg-main-color");
+    }
+});
+
+
+
+function goToByScroll(target) {
+    // Scroll
+    $('html,body').animate({
+        scrollTop: $("#" + target).offset().top - 70
+    }, 'slow');
+}
