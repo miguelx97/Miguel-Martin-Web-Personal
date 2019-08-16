@@ -47,6 +47,7 @@ Azul:
 
 #logo {
   width: 60px;
+  cursor: pointer;
 }
 
 #fondo-cabecera {

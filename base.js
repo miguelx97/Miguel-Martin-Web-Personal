@@ -10,10 +10,7 @@ $(document).ready(function () {
     $('#sec-sobre-mi').load("sections/sobre-mi.html");
     $('#footer-container').load("elements/footer.html");
 
-    $(".scroll").click(function (e) {
-        e.preventDefault();
-        goToByScroll($(this).attr("target"));
-    });
+    // $("body").hide()
 });
 
 $(window).scroll(function () {
